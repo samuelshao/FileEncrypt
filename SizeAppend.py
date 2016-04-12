@@ -6,4 +6,4 @@ def SizeAppend(name):
 		fi.write('\n')
 		fi.close()
 		statinfo = os.stat(name)
-	return print("File size appended successfully")
+	print ("File size appended successfully")
