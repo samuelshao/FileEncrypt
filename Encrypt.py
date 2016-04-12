@@ -1,3 +1,3 @@
-import SizeAppend
-def Encrypt.py()
-	SizeAppend()	
+from SizeAppend import SizeAppend
+b = SizeAppend()
+print(b)
