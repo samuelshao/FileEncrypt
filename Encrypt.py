@@ -2,7 +2,7 @@ from SizeAppend import SizeAppend
 from Crypto.Cipher import AES
 filename = 'ov7670_top.v'
 SizeAppend(filename)
-fi = open('key.txt', 'r')
+fi = open('keys.txt', 'r')
 AES_Key = fi.readline()
 fi.close()
 IVblock = 'This is an IV456'
