@@ -1,6 +1,9 @@
 import os
 def SizeAppend(name):
-	fi = open(name, 'rw')
 	statinfo = os.stat(name)
-	
-	return statinfo.st_size
+	while ((statinfo.st_size % 16 == 0) == False):
+		fi = open(name, 'a+')
+		fi.write('\n')
+		fi.close()
+		statinfo = os.stat(name)
+	return print("File size appended successfully")
